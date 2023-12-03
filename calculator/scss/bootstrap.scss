@@ -1,0 +1,11 @@
+$primary: hsl(0, 0%, 90%);
+$secondary:  hsl(0, 5%, 81%);
+$light: hsl(0, 0%, 93%);
+$warning: hsl(25, 93%, 57%);
+$success:  hsl(185, 42%, 37%);
+$info: hsl(45, 7%, 89%);
+$danger:  hsl(35, 11%, 61%);
+$dark:  hsl(185, 58%, 25%);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

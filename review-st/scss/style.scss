@@ -1,0 +1,49 @@
+.container-fluid{
+    height: 100vh;
+}
+.card{
+    width: 360px;
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#card-1{
+    transition: transform 0.5s, filter 0.2s;
+}
+.fadein{
+    animation: fadein 0.5s ease-out forwards;
+}
+@keyframes fadein{
+    from {
+        opacity: 0;
+        };
+    to {
+        opacity: 1;
+    }
+}
+.card #ratingForm .rating-stars label{
+    height: 48px;
+    width: 54px;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 54%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.card #ratingForm .rating-stars label:hover{
+    cursor: pointer;
+    background-color: grey;
+    transform: scale(1.2);
+    animation: fadein 1s ease-out forwards;
+}
+
+.card #ratingForm .rating-stars input:checked + label{
+    background-color:coral;
+}
+
+.container-autoText{
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}

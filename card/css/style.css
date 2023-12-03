@@ -1,0 +1,146 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: 480px;
+  width: 690px;
+}
+
+.form .result {
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: aliceblue;
+}
+
+.circle {
+  height: 160px;
+  width: 160px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+
+.box {
+  height: 50%;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.washedred {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.washedyellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.washedteal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.washedblue {
+  background-color: hsl(221, 100%, 96%);
+}
+
+.score-washed {
+  color: rgb(166, 166, 166);
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.red {
+  --clr-local: hsl(0, 100%, 67%);
+  color: var(--clr-local);
+}
+
+.yellow {
+  --clr-local: hsl(39, 100%, 56%);
+  color: var(--clr-local);
+}
+
+.teal {
+  --clr-local: hsl(166, 100%, 37%);
+  color: var(--clr-local);
+}
+
+.blue {
+  --clr-local: hsl(234, 85%, 45%);
+  color: var(--clr-local);
+}
+
+.smolbox {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.corner-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.corner {
+  height: 16px;
+  width: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px 0 0 0;
+  border-top: 1.7px solid var(--clr-local);
+  border-left: 1.7px solid var(--clr-local);
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 0 0;
+  border-top: 1.7px solid var(--clr-local);
+  border-right: 1.7px solid var(--clr-local);
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 0 10px;
+  border-bottom: 1.7px solid var(--clr-local);
+  border-left: 1.7px solid var(--clr-local);
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 1.7px solid var(--clr-local);
+  border-right: 1.7px solid var(--clr-local);
+  border-radius: 0 0 10px 0;
+}
