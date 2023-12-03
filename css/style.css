@@ -1,0 +1,80 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+body.dark-mode {
+  background-color: #333;
+  transition: all 0.7s ease-in-out;
+  color: #fff;
+}
+
+body.dark-mode button {
+  background-color: #333333; /* Dark gray background color */
+  color: #ffffff; /* White text color */
+  transition: all 0.7s ease-in-out;
+}
+
+.card {
+  width: 30%;
+}
+
+.ms-auto input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.ms-auto label {
+  height: 30px;
+  width: 60px;
+  background-color: #ededed;
+  border-radius: 15px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.5), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+}
+
+.ms-auto label::after {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  top: 4px;
+  left: 2px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.7s ease-in-out;
+}
+
+.ms-auto input:checked + label {
+  background: #242424;
+}
+
+.ms-auto input:checked + label::after {
+  left: 10px;
+  transform: translateX(100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.ms-auto input:checked body {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for medium screens (tablet) */
+@media only screen and (min-width: 730px) and (max-width: 983px) {
+  .card {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .card {
+    width: 100%;
+    margin: 1rem;
+  }
+}
